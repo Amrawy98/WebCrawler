@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc52cae0-9e00-470d-aea5-679c1a1d5c2e" name="Default Changelist" comment="" />
+    <list default="true" id="bc52cae0-9e00-470d-aea5-679c1a1d5c2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/spider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spider.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +16,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1a4mOcc1LHNsHYocUO6Qn6fXzt6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -64,6 +70,7 @@
       <workItem from="1586107389473" duration="628000" />
       <workItem from="1586162036154" duration="1923000" />
       <workItem from="1586360544033" duration="202000" />
+      <workItem from="1586804802815" duration="6000" />
     </task>
     <servers />
   </component>
