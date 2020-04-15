@@ -1,9 +1,5 @@
 import org.jsoup.nodes.Document;
-
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 class LinksStock {
     private final int maxCount;

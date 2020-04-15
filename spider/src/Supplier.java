@@ -4,6 +4,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.*;
 
 class Supplier implements Runnable {
@@ -24,7 +26,7 @@ class Supplier implements Runnable {
         //consume a link and read the links in this page
         while (b.getVisitedSize()<b.getMaxCount()) {
             Document document = null;
-            String URL;
+            String SURL;
             synchronized (b) {
                 while (b.getToVisitSize() <= 0) {
                     //No links in the queue
@@ -35,15 +37,23 @@ class Supplier implements Runnable {
 
                     }
                 }
-                URL = b.consume();
-                System.out.println(Thread.currentThread().getName() + " pulled URL: " + URL);
+                SURL = b.consume();
                 try {
-                    document = Jsoup.connect(URL).get();
-                    b.visit(URL,document);
-                    System.out.println("___ "+URL+" Downloaded ___");
+                    if(!(Robot.robotSafe(new URL(SURL))))
+                        continue;
+                }
+                catch (MalformedURLException exp)
+                {
+                    System.err.println("For '" + SURL + "': " + exp.getMessage());
+                }
+                System.out.println(Thread.currentThread().getName() + " pulled URL: " + SURL);
+                try {
+                    document = Jsoup.connect(SURL).get();
+                    b.visit(SURL,document);
+                    System.out.println("___ "+SURL+" Downloaded ___");
                 }
                 catch (IOException e) {
-                    System.err.println("For '" + URL + "': " + e.getMessage());
+                    System.err.println("For '" + SURL + "': " + e.getMessage());
                 }
                 b.notifyAll();
             }
