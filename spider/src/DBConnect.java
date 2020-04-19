@@ -1,4 +1,5 @@
 import java.sql.*;
+import java.util.Set;
 
 public class DBConnect {
     public static Connection con;
@@ -33,19 +34,54 @@ private static final String dropVisited ="DROP TABLE IF EXISTS " + "visited";
 //        }
 //        return 1;
 //    }
-    public static int getLatestFinalState() //ana hasamek getLatestFinalState XD
+    /**
+     * returns size of scheduled to be visited links in database on success
+     * in case of data base error returns zero displaying error in terminal*/
+    public static int getLatestFinalState(Set<String> auxilary,CustomQueue<String> toVisit) //ana hasamek getLatestFinalState XD
     {
         try {
-        String query2 = "SELECT * FROM auxilary";
-        String query3 = "SELECT * FROM visited";
-        ResultSet auxilary  = st.executeQuery(query2);
-        ResultSet visited  = st.executeQuery(query3);
-        ///////////////////logic latef nemla feh el sets ya  beh elly hategy fel parameters ////////////////////
+            String query1 = "SELECT * FROM tovisit";
+            String query2 = "SELECT * FROM auxilary";
+            ResultSet auxilaryRS  = st.executeQuery(query2);
+            ///////////////////logic latef nemla feh el sets ya  beh elly hategy fel parameters ////////////////////
+            //fill auxilary list
+            while (auxilaryRS.next()) {
+                            String link = auxilaryRS.getString("link");
+                            auxilary.add(link);
+                        }
+            ResultSet tpVisitRS  = st.executeQuery(query1);
+            //fill toVisit list
+            while (tpVisitRS.next()) {
+                String link = tpVisitRS.getString("link");
+                toVisit.add(link);
+            }
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            return toVisit.size();
         } catch (SQLException e) {
             e.printStackTrace();
             return 0;
         }
-        return 1;
+    }
+    /**
+     * returns size of visited links in database on success
+     * in case of data base error returns zero displaying error in terminal*/
+    public static int getLastVisited(Set<String> visited) //ana hasamek getLastVisited XD
+    {
+        try {
+            String query1 = "SELECT * FROM visited";
+            ResultSet visitedRS  = st.executeQuery(query1);
+            ///////////////////logic latef nemla feh el sets ya  beh elly hategy fel parameters ////////////////////
+            //Fill visited List
+            while (visitedRS.next()) {
+                String link = visitedRS.getString("link");
+                visited.add(link);
+            }
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////
+            return visited.size();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return 0;
+        }
     }
     public static int visitDB(String link)
     {
@@ -108,26 +144,4 @@ private static final String dropVisited ="DROP TABLE IF EXISTS " + "visited";
             return 0;
         }
     }
-//    public void getData() {
-//        try {
-//            String query2 = "SELECT * FROM auxilary";
-//            String query3 = "SELECT * FROM visited";
-//            rs = st.executeQuery(query2);
-//            System.out.println("Records from Database");
-//            while (rs.next()) {
-//                String name = rs.getString("link");
-//                String age = rs.getString("id");
-//                System.out.println("Name: " + name + " Age: " + age);
-//            }
-//            rs = st.executeQuery(query3);
-//            System.out.println("Records from Database");
-//            while (rs.next()) {
-//                String name = rs.getString("link");
-//                String age = rs.getString("id");
-//                System.out.println("Name: " + name + " Age: " + age);
-//            }
-//        } catch(Exception ex) {
-//            System.out.println(ex);
-//        }
-//    }
 }

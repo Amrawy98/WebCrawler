@@ -11,16 +11,15 @@ class LinksStock {
     public LinksStock(int max, CustomQueue<String> toVisit) {
         this.maxCount = max;
         this.toVisit.addAll(toVisit);
-  //      String s=toVisit.poll();
         toVisit.getQueue().forEach((s)->DBConnect.toVisitDB(s.toString()));
-//        while (s!=null)
-//        {
-//            DBConnect.toVisitDB(s);
-//            s=toVisit.poll();
-//        }
-       // robotTxtFiles = new HashMap<String, ArrayList>();
-
     }
+    public LinksStock(int max, CustomQueue<String> toVisit,Set<String> auxilary,Set<String> visited) {
+        this.maxCount = max;
+        this.toVisit.addAll(toVisit);
+        this.auxilary.addAll(auxilary);
+        this.visited.addAll(visited);
+        //dol already gayen men el DB fa mesh han7ot 7aga fel DB initially at the start of the program, atleast not in this case
+        }
     public boolean produce(String link) {
         if(!(visited.contains(link)||auxilary.contains(link)))
         {
@@ -38,7 +37,7 @@ class LinksStock {
         auxilary.add(s);
         DBConnect.deleteToVisitDB(s);
         DBConnect.auxDB(s);
-        System.out.println("Number of books after pull: "+toVisit.size());
+        System.out.println("Number of Links after pull: "+toVisit.size());
         return s;
     }
     public void visit(String link, Document Dom) {
@@ -59,9 +58,9 @@ class LinksStock {
     }
     public void printData()
     {
-        System.out.println("bookCount: "+toVisit.size());
+        System.out.println("toVisit Links Count: "+toVisit.size());
         System.out.println("maxCount: "+maxCount);
-        System.out.println("consumedCount: "+visited.size());
+        System.out.println("visited Count: "+visited.size());
     }
     public boolean isVisited(String URL)
     {

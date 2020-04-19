@@ -65,13 +65,9 @@ class Supplier implements Runnable {
                 synchronized (b) {
                     String url = page.attr("abs:href");
                     URL urlCheck= new URL(url);
-//                    if ((b.getToVisitSize()) < 1000 && b.getVisitedSize()<b.getMaxCount() && budget!=0) //TODO:ya reet nezawed 7ewar el depth wel budget dh HAAAAAAA
-//                    {
                     if(b.getVisitedSize()<b.getMaxCount()&&budget!=0){
                         String host = urlCheck.getHost();
-                        //\\w+\\.google.com
-                        //if ((url.toLowerCase().startsWith("http://") || url.toLowerCase().startsWith("https://"))&&(!(host.equals("support.google.com")||host.equals("policies.google.com")||host.equals("accounts.google.com")||host.equals("play.google.com")))) {
-                        if ((url.toLowerCase().startsWith("http://") || url.toLowerCase().startsWith("https://"))&&((!host.matches("\\w+\\.google\\.com"))||host.equals("www.google.com"))&&(!host.equals("apps.apple.com")))
+                         if ((url.toLowerCase().startsWith("http://") || url.toLowerCase().startsWith("https://"))&&((!host.matches("\\w+\\.google\\.com"))||host.equals("www.google.com"))&&(!host.equals("apps.apple.com")))
                         {
                             if(b.produce(url))
                             {
@@ -83,7 +79,7 @@ class Supplier implements Runnable {
                         }
                         else
                             {
-                                System.err.println("Google: SURPRISE MOTHER FUCKER");
+                                System.err.println("un allowed link or budget consumed"); //Tab3an dh mesh el right implementation lel budget
                             }
                     }
                     else
@@ -91,14 +87,6 @@ class Supplier implements Runnable {
                             System.out.println("number of visited sites is: "+b.getVisitedSize()+"/n"+"and the current budget for the site is: " + budget);
                             break;
                         }
-//                    } else {
-//                        System.out.println("__Reached upper limit kolo yerawa7__");
-//                                /*TODO:break wala wait ba2a ana mesh 3aref bas azon enno logical en el upper limit dh isA ya3ny hyeb2a el crawler budget
-//                                        fel 7ala de lazem dh yeb2a break 3ashan el budget 5elset bas mesh hyeb2a el condition keda*/
-//                        break;
-//
-//
-//                    }
                 }
             }
             } catch (MalformedURLException exp) {
