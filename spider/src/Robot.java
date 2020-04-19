@@ -14,7 +14,7 @@ public class Robot {
    // ArrayList<RobotRule> robotRules = new ArrayList<>();
 
     ////LAST WORKING VERISON//////
-    public static boolean robotSafe(URL url, LinksStock linkStock) {
+    public static boolean robotSafe(URL url) {
         String strHost = url.getHost();
         String strRobot = "http://" + strHost + "/robots.txt";
         System.out.println(strRobot);

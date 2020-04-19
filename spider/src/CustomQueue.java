@@ -1,7 +1,6 @@
-import java.util.HashSet;
-import java.util.Iterator;
+import java.util.*;
 
-public class CustomQueue<T> extends HashSet {
+public class CustomQueue<T>{
 
     //    Pop is:
 //
@@ -11,11 +10,33 @@ public class CustomQueue<T> extends HashSet {
 //        it.remove() ;
 //        return popped ;
 //    }
+    private HashSet<T> hashSet = new HashSet<T>();
+    private Queue<T> queue = new LinkedList<T>();
     T poll()
     {
-        Iterator<T> iterator = this.iterator();
-        T t = iterator.next();
-        iterator.remove();
+        T t = queue.poll();
+        hashSet.remove(t);
         return t;
+    }
+    Boolean add (T t)
+    {
+        if(hashSet.add(t)){
+            queue.add(t);
+            return true;
+        }
+        return false;
+    }
+    int size()
+    {
+        return queue.size();
+    }
+
+    public void addAll(CustomQueue<T> toVisit) {
+        queue.addAll(toVisit.queue);
+        hashSet.addAll(toVisit.queue);
+    }
+    Queue<T> getQueue()
+    {
+        return queue;
     }
 }
