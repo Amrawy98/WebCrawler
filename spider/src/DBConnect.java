@@ -1,3 +1,5 @@
+import com.google.gson.Gson;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,7 +18,7 @@ private static final String dropVisited ="DROP TABLE IF EXISTS " + "visited";
     public static void initDB() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost/db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&maxAllowedPacket=2000000", "root", "");
             st = con.createStatement();
         } catch (Exception ex) {
             System.out.println("Error: " + ex);
@@ -162,10 +164,13 @@ private static final String dropVisited ="DROP TABLE IF EXISTS " + "visited";
             String query1 = "DELETE FROM `pagerank`";
             st.executeUpdate(query1);
             for( String s : out.keySet())
-            {
 
-                String outLinks ="'"+out.get(s).toString().replace("\\","\\\\").replace("'","\\'")+"'";
-                String inLinks =in.get(s)==null?"NULL":"'"+in.get(s).toString().replace("\\","\\\\").replace("'","\\'")+"'";
+            {
+                Gson gson = new Gson();
+                String jsonOut = gson.toJson(out.get(s));
+                A
+                String outLinks ="'"+jsonOut.replace("\\","\\\\").replace("'","\\'")+"'";
+                String inLinks =in.get(s)==null?"NULL":"'"+gson.toJson(in.get(s)).replace("\\","\\\\").replace("'","\\'")+"'";
                 s=s.replace("\\","\\\\").replace("'","\\'");
                 String query = "INSERT INTO `pagerank` (`link`, `outLinks`, `inLinks`, `rank`) VALUES ('"+s+"', "+outLinks+", "+inLinks+", '0')";
                 st.executeUpdate(query);

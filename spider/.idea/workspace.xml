@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc52cae0-9e00-470d-aea5-679c1a1d5c2e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/spider/BookStock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/spider/CustomQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spider/CustomQueue.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/spider/DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spider/DBConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/spider/FML.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/spider/LinksStock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spider/LinksStock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/spider/Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spider/Supplier.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/spider/spider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spider/spider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spider.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBConnect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LinksStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinksStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Supplier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/spider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,9 +47,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../javaWorkSpace/Indexer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../javaWorkSpace/jars/gson-2.8.6.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,7 +59,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.30574712" />
   </component>
   <component name="RunManager" selected="Application.spider">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -135,7 +129,7 @@
       <workItem from="1590327534220" duration="9872000" />
       <workItem from="1590342828953" duration="737000" />
       <workItem from="1590410149649" duration="11852000" />
-      <workItem from="1590484515306" duration="2084000" />
+      <workItem from="1590484515306" duration="6446000" />
     </task>
     <servers />
   </component>
@@ -167,46 +161,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="865" height="454" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1590413195228" />
-    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1590484527363">
+    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1590499616099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590484527363" />
-    <state width="914" height="218" key="GridCell.Tab.0.bottom" timestamp="1590485315568">
+    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590499616099" />
+    <state width="1877" height="223" key="GridCell.Tab.0.bottom" timestamp="1590500282358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
-    <state width="914" height="218" key="GridCell.Tab.0.center" timestamp="1590485315568">
+    <state width="1877" height="223" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590500282358" />
+    <state width="1877" height="223" key="GridCell.Tab.0.center" timestamp="1590500282358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="218" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
-    <state width="914" height="218" key="GridCell.Tab.0.left" timestamp="1590485315568">
+    <state width="1877" height="223" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590500282358" />
+    <state width="1877" height="223" key="GridCell.Tab.0.left" timestamp="1590500282358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="218" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
-    <state width="914" height="218" key="GridCell.Tab.0.right" timestamp="1590485315568">
+    <state width="1877" height="223" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590500282358" />
+    <state width="1877" height="223" key="GridCell.Tab.0.right" timestamp="1590500282358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="218" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
-    <state width="914" height="218" key="GridCell.Tab.1.bottom" timestamp="1590485315568">
+    <state width="1877" height="223" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590500282358" />
+    <state width="1877" height="223" key="GridCell.Tab.1.bottom" timestamp="1590500282358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="218" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
-    <state width="914" height="218" key="GridCell.Tab.1.center" timestamp="1590485315568">
+    <state width="1877" height="223" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590500282358" />
+    <state width="1877" height="223" key="GridCell.Tab.1.center" timestamp="1590500282358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="218" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
-    <state width="914" height="218" key="GridCell.Tab.1.left" timestamp="1590485315568">
+    <state width="1877" height="223" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590500282358" />
+    <state width="1877" height="223" key="GridCell.Tab.1.left" timestamp="1590500282358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="218" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
-    <state width="914" height="218" key="GridCell.Tab.1.right" timestamp="1590485315568">
+    <state width="1877" height="223" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590500282358" />
+    <state width="1877" height="223" key="GridCell.Tab.1.right" timestamp="1590500282358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="218" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1587093063345">
+    <state width="1877" height="223" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590500282358" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1590499618572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587093063345" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590499618572" />
     <state width="1498" height="684" key="XDebugger.FullValuePopup" timestamp="1590327284216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -323,24 +317,24 @@
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/spider.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="152" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/spider.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>173</line>
+          <line>178</line>
           <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>103</line>
+          <line>105</line>
           <option name="timeStamp" value="159" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/spider.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/spider.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="169" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
