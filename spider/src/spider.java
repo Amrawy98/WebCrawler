@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 class spider {
-    static final int MaxCap= 5000;
+    static final int MaxCap= 100;
     public static void main(String... args) throws InterruptedException {
         Set<String> visited = new HashSet<String>();
         CustomQueue<String> toVisit = new CustomQueue<String>();

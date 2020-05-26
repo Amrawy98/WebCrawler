@@ -168,7 +168,6 @@ private static final String dropVisited ="DROP TABLE IF EXISTS " + "visited";
             {
                 Gson gson = new Gson();
                 String jsonOut = gson.toJson(out.get(s));
-                A
                 String outLinks ="'"+jsonOut.replace("\\","\\\\").replace("'","\\'")+"'";
                 String inLinks =in.get(s)==null?"NULL":"'"+gson.toJson(in.get(s)).replace("\\","\\\\").replace("'","\\'")+"'";
                 s=s.replace("\\","\\\\").replace("'","\\'");
