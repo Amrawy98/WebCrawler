@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc52cae0-9e00-470d-aea5-679c1a1d5c2e" name="Default Changelist" comment="" />
+    <list default="true" id="bc52cae0-9e00-470d-aea5-679c1a1d5c2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsoup_1_13_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_13_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spider/BookStock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spider/CustomQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spider/CustomQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spider/DBConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spider/DBConnect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spider/FML.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spider/LinksStock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spider/LinksStock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spider/Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spider/Supplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/spider/spider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/spider/spider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CustomQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DBConnect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBConnect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LinksStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinksStock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/spider.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -13,6 +42,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1a4mOcc1LHNsHYocUO6Qn6fXzt6" />
   <component name="ProjectViewState">
@@ -24,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SearchEngine-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../javaWorkSpace/Indexer" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,8 +75,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="spider" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="spider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="spider" />
+      <module name="spider" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
       <module name="spider" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -53,6 +99,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.spider" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -77,6 +125,17 @@
       <workItem from="1587170451656" duration="17286000" />
       <workItem from="1587238819089" duration="11768000" />
       <workItem from="1587327210719" duration="4970000" />
+      <workItem from="1589493700922" duration="1398000" />
+      <workItem from="1589574482823" duration="3164000" />
+      <workItem from="1590134185689" duration="1132000" />
+      <workItem from="1590136782348" duration="68000" />
+      <workItem from="1590271400691" duration="3035000" />
+      <workItem from="1590274914766" duration="120000" />
+      <workItem from="1590275044715" duration="24792000" />
+      <workItem from="1590327534220" duration="9872000" />
+      <workItem from="1590342828953" duration="737000" />
+      <workItem from="1590410149649" duration="11852000" />
+      <workItem from="1590484515306" duration="2084000" />
     </task>
     <servers />
   </component>
@@ -100,58 +159,66 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="826" y="481" key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586015235844" />
-    <state x="314" y="445" width="1328" height="595" key="#xdebugger.evaluate" timestamp="1587332417954">
+    <state x="592" y="445" width="1328" height="595" key="#xdebugger.evaluate" timestamp="1590433677094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="314" y="445" width="1328" height="595" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1587332417954" />
-    <state width="865" height="454" key="DebuggerActiveHint" timestamp="1587334903918">
+    <state x="592" y="445" width="1328" height="595" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1590433677094" />
+    <state width="865" height="454" key="DebuggerActiveHint" timestamp="1590413195228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="865" height="454" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1587334903918" />
-    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1587189510334">
+    <state width="865" height="454" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1590413195228" />
+    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1590484527363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587189510334" />
-    <state width="1877" height="220" key="GridCell.Tab.0.bottom" timestamp="1587335624767">
+    <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590484527363" />
+    <state width="914" height="218" key="GridCell.Tab.0.bottom" timestamp="1590485315568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587335624767" />
-    <state width="1877" height="220" key="GridCell.Tab.0.center" timestamp="1587335624767">
+    <state width="914" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
+    <state width="914" height="218" key="GridCell.Tab.0.center" timestamp="1590485315568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587335624767" />
-    <state width="1877" height="220" key="GridCell.Tab.0.left" timestamp="1587335624767">
+    <state width="914" height="218" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
+    <state width="914" height="218" key="GridCell.Tab.0.left" timestamp="1590485315568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587335624767" />
-    <state width="1877" height="220" key="GridCell.Tab.0.right" timestamp="1587335624767">
+    <state width="914" height="218" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
+    <state width="914" height="218" key="GridCell.Tab.0.right" timestamp="1590485315568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587335624767" />
-    <state width="1877" height="220" key="GridCell.Tab.1.bottom" timestamp="1587335624767">
+    <state width="914" height="218" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
+    <state width="914" height="218" key="GridCell.Tab.1.bottom" timestamp="1590485315568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587335624767" />
-    <state width="1877" height="220" key="GridCell.Tab.1.center" timestamp="1587335624767">
+    <state width="914" height="218" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
+    <state width="914" height="218" key="GridCell.Tab.1.center" timestamp="1590485315568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587335624767" />
-    <state width="1877" height="220" key="GridCell.Tab.1.left" timestamp="1587335624767">
+    <state width="914" height="218" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
+    <state width="914" height="218" key="GridCell.Tab.1.left" timestamp="1590485315568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587335624767" />
-    <state width="1877" height="220" key="GridCell.Tab.1.right" timestamp="1587335624767">
+    <state width="914" height="218" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
+    <state width="914" height="218" key="GridCell.Tab.1.right" timestamp="1590485315568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="220" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587335624767" />
+    <state width="914" height="218" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590485315568" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1587093063345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587093063345" />
-    <state x="342" y="140" key="new project wizard" timestamp="1586813202142">
+    <state width="1498" height="684" key="XDebugger.FullValuePopup" timestamp="1590327284216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1586813202142" />
+    <state width="1498" height="684" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1590327284216" />
+    <state x="342" y="140" key="new project wizard" timestamp="1590272052296">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1590272052296" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1590311643476">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590311643476" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587239426141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,96 +323,32 @@
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>127</line>
-          <option name="timeStamp" value="236" />
+          <url>file://$PROJECT_DIR$/src/spider.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/spider.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>132</line>
-          <option name="timeStamp" value="245" />
+          <line>173</line>
+          <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>117</line>
-          <option name="timeStamp" value="289" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>118</line>
-          <option name="timeStamp" value="290" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>130</line>
-          <option name="timeStamp" value="291" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="292" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="293" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="294" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>142</line>
-          <option name="timeStamp" value="295" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="298" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="299" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="307" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="308" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="309" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="336" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="337" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="338" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/DBConnect.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="341" />
+          <line>103</line>
+          <option name="timeStamp" value="159" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="this" />
+        <watch expression="shit" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

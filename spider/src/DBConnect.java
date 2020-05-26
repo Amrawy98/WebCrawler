@@ -1,4 +1,6 @@
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Set;
 
 public class DBConnect {
@@ -83,16 +85,25 @@ private static final String dropVisited ="DROP TABLE IF EXISTS " + "visited";
             return 0;
         }
     }
-    public static int visitDB(String link)
+    public static int visitDB(String link,String Dom)
     {
         link=link.replace("\\","\\\\");
         link=link.replace("'","\\'");
-        String query = "INSERT INTO `visited` (`id`, `link`) VALUES (NULL, '" + link + "')";
+        Dom=Dom.replace("\\","\\\\");
+        Dom=Dom.replace("'","\\'");
+        String query = "INSERT INTO `visited` (`id`, `link`,`Dom`) VALUES (NULL, '" + link + "','"+Dom+"')";
         try {
             return st.executeUpdate(query);
         } catch (SQLException e) {
-            e.printStackTrace();
-            return 0;
+            try {
+                query = "INSERT INTO `visited` (`id`, `link`,`Dom`) VALUES (NULL, '" + link + "',NULL)";
+                return st.executeUpdate(query);
+            }
+            catch (SQLException e1)
+            {
+                e1.printStackTrace();
+                return 0;
+            }
         }
     }
     public static int auxDB(String link)
@@ -143,5 +154,25 @@ private static final String dropVisited ="DROP TABLE IF EXISTS " + "visited";
             e.printStackTrace();
             return 0;
         }
+    }
+    public static void pageRankTable(HashMap<String, ArrayList<String>> out , HashMap<String,ArrayList<String>> in)
+    {
+        try {
+
+            String query1 = "DELETE FROM `pagerank`";
+            st.executeUpdate(query1);
+            for( String s : out.keySet())
+            {
+
+                String outLinks ="'"+out.get(s).toString().replace("\\","\\\\").replace("'","\\'")+"'";
+                String inLinks =in.get(s)==null?"NULL":"'"+in.get(s).toString().replace("\\","\\\\").replace("'","\\'")+"'";
+                s=s.replace("\\","\\\\").replace("'","\\'");
+                String query = "INSERT INTO `pagerank` (`link`, `outLinks`, `inLinks`, `rank`) VALUES ('"+s+"', "+outLinks+", "+inLinks+", '0')";
+                st.executeUpdate(query);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
     }
 }

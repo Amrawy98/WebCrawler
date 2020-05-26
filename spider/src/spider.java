@@ -1,4 +1,3 @@
-import javax.swing.text.Style;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -28,12 +27,12 @@ class spider {
             for (Thread thread : threads) {
                 thread.join();
             }
+            System.out.println("Finished crawling");
+            b.page();
             b.printData();
         }
         else
             {
-                ////bos ya 3am el zeft e7na hane3ml 3 lists we neb3athoa we based on the results we can determine witch constructor to use
-                toVisit.add("https://support.google.com/chrome/answer/6130773?hl=en");
                 toVisit.add("https://www.youtube.com/watch?v=TcOWwIQDpnE&list=RDTcOWwIQDpnE&start_radio=1"); //1
                 toVisit.add("https://www.youtube.com/watch?v=-UIn2xq-tOE&list=RD-UIn2xq-tOE&start_radio=1"); //2
                 toVisit.add("https://www.youtube.com/watch?v=qBUZjsxGiDk&list=RD-UIn2xq-tOE&index=1"); //3
@@ -59,6 +58,8 @@ class spider {
                 for (Thread thread : threads) {
                     thread.join();
                 }
+                System.out.println("Finished crawling");
+                b.page();
                 b.printData();
         }
     }

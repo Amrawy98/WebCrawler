@@ -1,4 +1,9 @@
+import javafx.util.Pair;
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 import java.util.*;
 
 class LinksStock {
@@ -6,8 +11,9 @@ class LinksStock {
     Set<String> visited = new HashSet<String>();
     Set<String> auxilary = new HashSet<String>();
     CustomQueue<String> toVisit = new CustomQueue<String>();
-    //List<Document> pages = new LinkedList<Document>();
-    //HashMap<String, ArrayList> robotTxtFiles;
+    public HashMap<String,ArrayList<String>> outLinks  = new HashMap<>();
+    public HashMap<String,ArrayList<String>> inLinks  = new HashMap<>();
+    HashMap<String,Document> pages = new HashMap<String,Document>();
     public LinksStock(int max, CustomQueue<String> toVisit) {
         this.maxCount = max;
         this.toVisit.addAll(toVisit);
@@ -16,7 +22,7 @@ class LinksStock {
     public LinksStock(int max, CustomQueue<String> toVisit,Set<String> auxilary,Set<String> visited) {
         this.maxCount = max;
         this.toVisit.addAll(toVisit);
-        this.auxilary.addAll(auxilary);
+        this.toVisit.addAll(auxilary);
         this.visited.addAll(visited);
         //dol already gayen men el DB fa mesh han7ot 7aga fel DB initially at the start of the program, atleast not in this case
         }
@@ -31,7 +37,15 @@ class LinksStock {
         }
         return false;
     }
-
+    public void addToPage(String link,String source)
+    {
+        outLinks.get(source).add(link);
+        if(inLinks.get(link)==null)
+        {
+            inLinks.put(link, new ArrayList<String>());
+        }
+        inLinks.get(link).add(source);
+    }
     public String consume () {
         String s = toVisit.poll();
         auxilary.add(s);
@@ -43,9 +57,9 @@ class LinksStock {
     public void visit(String link, Document Dom) {
             visited.add(link);
             auxilary.remove(link);
-            DBConnect.visitDB(link);
+            DBConnect.visitDB(link,Dom.toString());
             DBConnect.deleteAuxDB(link);
-            //pages.add(Dom);
+            pages.put(link,Dom);
             System.out.println("Number of visited links after: " + visited.size() + " the link is:" + link);
             //System.out.println("Number of visited pages after pull: " + pages.size());
 
@@ -74,4 +88,24 @@ class LinksStock {
     {
         return visited.size();
     }
+ public void page()
+   {
+      for(String s : visited)
+      {
+          if(outLinks.get(s)==null)
+          {
+              outLinks.put(s, new ArrayList<String>());
+          }
+          Elements linksOnPage = pages.get(s).select("a[href]");
+          for (Element page : linksOnPage)
+          {
+              String url = page.attr("abs:href");
+              if(visited.contains(url))
+                addToPage(url,s);
+          }
+      }
+      inLinks.keySet().retainAll(visited);
+      outLinks.keySet().retainAll(visited);
+      DBConnect.pageRankTable(outLinks,inLinks);
+   }
 }

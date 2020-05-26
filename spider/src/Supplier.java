@@ -64,9 +64,8 @@ class Supplier implements Runnable {
             for (Element page : linksOnPage) {
                 synchronized (b) {
                     String url = page.attr("abs:href");
-                    URL urlCheck= new URL(url);
                     if(b.getVisitedSize()<b.getMaxCount()&&budget!=0){
-                        String host = urlCheck.getHost();
+                        String host = (new URL(url)).getHost();
                          if ((url.toLowerCase().startsWith("http://") || url.toLowerCase().startsWith("https://"))&&((!host.matches("\\w+\\.google\\.com"))||host.equals("www.google.com"))&&(!host.equals("apps.apple.com")))
                         {
                             if(b.produce(url))
@@ -79,13 +78,12 @@ class Supplier implements Runnable {
                         }
                         else
                             {
-                                System.err.println("un allowed link or budget consumed"); //Tab3an dh mesh el right implementation lel budget
+                                System.err.println("unallowed link or budget consumed"); //Tab3an dh mesh el right implementation lel budget
                             }
                     }
                     else
                         {
-                            System.out.println("number of visited sites is: "+b.getVisitedSize()+"/n"+"and the current budget for the site is: " + budget);
-                            break;
+                            System.out.println("Budget Reached");
                         }
                 }
             }

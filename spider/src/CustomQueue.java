@@ -39,4 +39,10 @@ public class CustomQueue<T>{
     {
         return queue;
     }
+
+    public void addAll(Set<T> auxilary) {
+        auxilary.removeAll(hashSet);
+        hashSet.addAll(auxilary);
+        queue.addAll(auxilary);
+    }
 }
