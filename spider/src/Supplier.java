@@ -47,7 +47,7 @@ class Supplier implements Runnable {
                 }
 
             try {
-            document = Jsoup.connect(SURL).get();
+            document = Jsoup.connect(SURL).timeout(100000).ignoreHttpErrors(true).get();
             synchronized (b) {
                     if(b.getVisitedSize()>=b.getMaxCount())
                         continue;
